@@ -49,6 +49,7 @@ const CategoryPage = () => {
             creator,
             listingPhotoPaths,
             city,
+            title,
             province,
             country,
             category,
@@ -59,12 +60,13 @@ const CategoryPage = () => {
             <ListingCard
               listingId={_id}
               creator={creator}
+              title={title}
               listingPhotoPaths={listingPhotoPaths}
               city={city}
               province={province}
               country={country}
               category={category}
-              type={type}
+              // type={type}
               price={price}
               booking={booking}
             />

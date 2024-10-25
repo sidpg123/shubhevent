@@ -2,9 +2,10 @@
   width: 100vw;
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../public/assets/slide.jpg");
+    url("../../public/assets/couple.png");
   background-position: center top;
   background-size: cover;
+  filter: brightness(1.5); /* Increase brightness */
 
   h1 {
     padding: 40px 20px;
@@ -13,4 +14,3 @@
     color: white;
   }
 }
-

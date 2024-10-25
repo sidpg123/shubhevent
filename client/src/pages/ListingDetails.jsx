@@ -113,12 +113,12 @@ const ListingDetails = () => {
         </div>
 
         <h2>
-          {listing.type} in {listing.city}, {listing.province},{" "}
+          {/* {listing.type}*/} in {listing.city}, {listing.province},{" "} 
           {listing.country}
         </h2>
         <p>
-          {listing.guestCount} guests - {listing.bedroomCount} bedroom(s) -{" "}
-          {listing.bedCount} bed(s) - {listing.bathroomCount} bathroom(s)
+           {listing.guestCount} guests {/*- {listing.bedroomCount} bedroom(s) -{" "}
+          {listing.bedCount} bed(s) - {listing.bathroomCount} bathroom(s) */}
         </p>
         <hr />
 
@@ -144,7 +144,7 @@ const ListingDetails = () => {
         <hr />
 
         <div className="booking">
-          <div>
+          {/* <div>
             <h2>What this place offers?</h2>
             <div className="amenities">
               {listing.amenities[0].split(",").map((item, index) => (
@@ -159,10 +159,10 @@ const ListingDetails = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div>
-            <h2>How long do you want to stay?</h2>
+            <h2>How long do you want aquire this srvice?</h2>
             <div className="date-range-calendar">
               <DateRange ranges={dateRange} onChange={handleSelect} />
               {dayCount > 1 ? (

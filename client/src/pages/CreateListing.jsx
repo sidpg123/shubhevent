@@ -112,10 +112,10 @@ const CreateListing = () => {
       listingForm.append("province", formLocation.province);
       listingForm.append("country", formLocation.country);
       listingForm.append("guestCount", guestCount);
-      listingForm.append("bedroomCount", bedroomCount);
-      listingForm.append("bedCount", bedCount);
-      listingForm.append("bathroomCount", bathroomCount);
-      listingForm.append("amenities", amenities);
+      // listingForm.append("bedroomCount", bedroomCount);
+      // listingForm.append("bedCount", bedCount);
+      // listingForm.append("bathroomCount", bathroomCount);
+      // listingForm.append("amenities", amenities);
       listingForm.append("title", formDescription.title);
       listingForm.append("description", formDescription.description);
       listingForm.append("highlight", formDescription.highlight);
@@ -166,7 +166,7 @@ const CreateListing = () => {
               ))}
             </div>
 
-            <h3>What type of place will guests have?</h3>
+            {/* <h3>What type of place will guests have?</h3>
             <div className="type-list">
               {types?.map((item, index) => (
                 <div
@@ -181,7 +181,7 @@ const CreateListing = () => {
                   <div className="type_icon">{item.icon}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <h3>Where's your place located?</h3>
             <div className="full">
@@ -248,7 +248,7 @@ const CreateListing = () => {
               </div>
             </div>
 
-            <h3>Share some basics about your place</h3>
+            <h3>Share some basics about your Service</h3>
             <div className="basics">
               <div className="basic">
                 <p>Guests</p>
@@ -277,7 +277,7 @@ const CreateListing = () => {
                 </div>
               </div>
 
-              <div className="basic">
+              {/* <div className="basic">
                 <p>Bedrooms</p>
                 <div className="basic_count">
                   <RemoveCircleOutline
@@ -302,9 +302,9 @@ const CreateListing = () => {
                     }}
                   />
                 </div>
-              </div>
+              </div> */}
 
-              <div className="basic">
+              {/* <div className="basic">
                 <p>Beds</p>
                 <div className="basic_count">
                   <RemoveCircleOutline
@@ -329,9 +329,9 @@ const CreateListing = () => {
                     }}
                   />
                 </div>
-              </div>
+              </div> */}
 
-              <div className="basic">
+              {/* <div className="basic">
                 <p>Bathrooms</p>
                 <div className="basic_count">
                   <RemoveCircleOutline
@@ -356,14 +356,14 @@ const CreateListing = () => {
                     }}
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="create-listing_step2">
-            <h2>Step 2: Make your place stand out</h2>
+            <h2>Step 2: Let's show...</h2>
             <hr />
-
+{/* 
             <h3>Tell guests what your place has to offer</h3>
             <div className="amenities">
               {facilities?.map((item, index) => (
@@ -378,7 +378,7 @@ const CreateListing = () => {
                   <p>{item.name}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <h3>Add some photos of your place</h3>
             <DragDropContext onDragEnd={handleDragPhoto}>
@@ -499,7 +499,7 @@ const CreateListing = () => {
                 required
               />
               <p>Now, set your PRICE</p>
-              <span>$</span>
+              <span>₹</span>
               <input
                 type="number"
                 placeholder="100"

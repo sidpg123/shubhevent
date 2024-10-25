@@ -13,7 +13,7 @@ const Listings = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const listings = useSelector((state) => state.listings);
-
+  console.log("listings", listings)
   const getFeedListings = async () => {
     try {
       const response = await fetch(
@@ -63,6 +63,7 @@ const Listings = () => {
               listingPhotoPaths,
               city,
               province,
+              title,
               country,
               category,
               type,
@@ -76,6 +77,7 @@ const Listings = () => {
                 city={city}
                 province={province}
                 country={country}
+                title={title}
                 category={category}
                 type={type}
                 price={price}

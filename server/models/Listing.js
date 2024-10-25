@@ -10,10 +10,10 @@ const ListingSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    type: {
-      type: String,
-      required: true,
-    },
+    // type: {
+    //   type: String,
+    //   required: true,
+    // },
     streetAddress: {
       type: String,
       required: true,
@@ -38,22 +38,22 @@ const ListingSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    bedroomCount: {
-      type: Number,
-      required: true,
-    },
-    bedCount: {
-      type: Number,
-      required: true,
-    },
-    bathroomCount: {
-      type: Number,
-      required: true,
-    },
-    amenities: {
-      type: Array,
-      default:[]
-    },
+    // bedroomCount: {
+    //   type: Number,
+    //   required: true,
+    // },
+    // bedCount: {
+    //   type: Number,
+    //   required: true,
+    // },
+    // bathroomCount: {
+    //   type: Number,
+    //   required: true,
+    // },
+    // amenities: {
+    //   type: Array,
+    //   default:[]
+    // },
     listingPhotoPaths: [{ type: String }], // Store photo URLs
     title: {
       type: String,

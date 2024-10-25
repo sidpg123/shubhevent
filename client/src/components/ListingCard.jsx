@@ -18,6 +18,7 @@ const ListingCard = ({
   country,
   category,
   type,
+  title,
   price,
   startDate,
   endDate,
@@ -103,7 +104,7 @@ const ListingCard = ({
           ))}
         </div>
       </div>
-
+      <h2>{title}</h2>
       <h3>
         {city}, {province}, {country}
       </h3>
@@ -111,9 +112,9 @@ const ListingCard = ({
 
       {!booking ? (
         <>
-          <p>{type}</p>
+          {/* <p>{type}</p> */}
           <p>
-            <span>${price}</span> per night
+            <span>₹{price}</span>
           </p>
         </>
       ) : (
@@ -122,7 +123,7 @@ const ListingCard = ({
             {startDate} - {endDate}
           </p>
           <p>
-            <span>${totalPrice}</span> total
+            <span>₹{totalPrice}</span> total
           </p>
         </>
       )}

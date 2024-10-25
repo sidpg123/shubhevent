@@ -8,6 +8,11 @@ import {
   GiForestCamp,
   GiIsland,
   GiWindmill,
+  GiDiamondRing ,
+  GiPartyFlags ,
+  GiPartyPopper ,
+  GiMusicalNotes ,
+  GiClothes,
 } from "react-icons/gi";
 import {
   FaSkiing,
@@ -16,8 +21,12 @@ import {
   FaFireExtinguisher,
   FaUmbrellaBeach,
   FaKey,
+  FaCameraRetro ,
+  FaLaughSquint ,
+  FaHandSparkles ,
+  FaCocktail,
 } from "react-icons/fa";
-import { FaHouseUser, FaPeopleRoof, FaKitchenSet } from "react-icons/fa6";
+import { FaHouseUser, FaPeopleRoof, FaKitchenSet, FaUtensils  } from "react-icons/fa6";
 import {
   BiSolidWasher,
   BiSolidDryer,
@@ -28,7 +37,7 @@ import {
 } from "react-icons/bi";
 import { BsSnow, BsFillDoorOpenFill, BsPersonWorkspace } from "react-icons/bs";
 import { IoDiamond } from "react-icons/io5";
-import { MdOutlineVilla, MdMicrowave, MdBalcony, MdYard, MdPets } from "react-icons/md";
+import { MdOutlineVilla, MdMicrowave, MdBalcony, MdYard, MdPets, MdFace3, MdBusinessCenter   } from "react-icons/md";
 import {
   PiBathtubFill,
   PiCoatHangerFill,
@@ -45,100 +54,100 @@ import {
 import { AiFillCar } from "react-icons/ai";
 
 export const categories = [
-  {
-    label: "All",
-    icon: <BiWorld />,
-  },
+  // {
+  //   label: "All",
+  //   icon: <BiWorld />,
+  // },
   {
     img: "assets/beach_cat.jpg",
-    label: "Beachfront",
-    icon: <TbBeach />,
-    description: "This property is close to the beach!",
+    label: "Marriage Halls",
+    icon: <GiDiamondRing />,
+    description: "Event Halls",
   },
   {
     img: "assets/windmill_cat.webp",
-    label: "Windmills",
-    icon: <GiWindmill />,
-    description: "This property is has windmills!",
+    label: "Caterers",
+    icon: <FaUtensils />,
+    description: "Best food",
   },
   {
     img: "assets/modern_cat.webp",
-    label: "Iconic cities",
-    icon: <MdOutlineVilla />,
-    description: "This property is modern!",
+    label: "Decorators",
+    icon: <GiPartyFlags  />,
+    description: "Make your event beautiful",
   },
   {
     img: "assets/countryside_cat.webp",
-    label: "Countryside",
-    icon: <TbMountain />,
-    description: "This property is in the countryside!",
+    label: "Photographers",
+    icon: <FaCameraRetro  />,
+    description: "Capture your memories",
   },
   {
     img: "assets/pool_cat.jpg",
-    label: "Amazing Pools",
-    icon: <TbPool />,
-    description: "This is property has a beautiful pool!",
+    label: "Makeup Artist",
+    icon: <MdFace3  />,
+    description: "Look amazing",
   },
   {
     img: "assets/island_cat.webp",
-    label: "Islands",
-    icon: <GiIsland />,
+    label: "Party Halls",
+    icon: <GiPartyPopper  />,
     description: "This property is on an island!",
   },
   {
     img: "assets/lake_cat.webp",
-    label: "Lakefront",
-    icon: <GiBoatFishing />,
+    label: "StandUp Halls",
+    icon: <FaLaughSquint   />,
     description: "This property is near a lake!",
   },
   {
     img: "assets/skiing_cat.jpg",
-    label: "Ski-in/out",
-    icon: <FaSkiing />,
+    label: "Conference Halls",
+    icon: <MdBusinessCenter  />,
     description: "This property has skiing activies!",
   },
   {
     img: "assets/castle_cat.webp",
-    label: "Castles",
-    icon: <GiCastle />,
+    label: "Mhendi Artist",
+    icon: <FaHandSparkles  />,
     description: "This property is an ancient castle!",
   },
   {
     img: "assets/cave_cat.jpg",
-    label: "Caves",
-    icon: <GiCaveEntrance />,
+    label: "Choreographers",
+    icon: <GiMusicalNotes   />,
     description: "This property is in a spooky cave!",
   },
   {
     img: "assets/camping_cat.jpg",
-    label: "Camping",
-    icon: <GiForestCamp />,
+    label: "Dress Designers",
+    icon: <GiClothes />,
     description: "This property offers camping activities!",
   },
   {
     img: "assets/arctic_cat.webp",
-    label: "Arctic",
-    icon: <BsSnow />,
+    label: "Bar Services",
+    icon: <FaCocktail />,
     description: "This property is in arctic environment!",
   },
-  {
-    img: "assets/desert_cat.webp",
-    label: "Desert",
-    icon: <GiCactus />,
-    description: "This property is in the desert!",
-  },
-  {
-    img: "assets/barn_cat.jpg",
-    label: "Barns",
-    icon: <GiBarn />,
-    description: "This property is in a barn!",
-  },
-  {
-    img: "assets/lux_cat.jpg",
-    label: "Luxury",
-    icon: <IoDiamond />,
-    description: "This property is brand new and luxurious!",
-  },
+  // {
+  //   img: "assets/desert_cat.webp",
+  //   label: "Desert",
+  //   icon: <GiCactus />,
+  //   description: "This property is in the desert!",
+  // },
+  // {
+  //   img: "assets/barn_cat.jpg",
+  //   label: "Barns",
+  //   icon: <GiBarn />,
+  //   description: "This property is in a barn!",
+  // },
+  // {
+  //   img: "assets/lux_cat.jpg",
+  //   label: "Luxury",
+  //   icon: <IoDiamond />,
+  //   description: "This property is brand new and luxurious!",
+  // },
 ];
 
 export const types = [
