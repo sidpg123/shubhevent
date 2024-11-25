@@ -53,7 +53,6 @@ const CategoryPage = () => {
             province,
             country,
             category,
-            type,
             price,
             booking = false,
           }) => (
@@ -66,7 +65,6 @@ const CategoryPage = () => {
               province={province}
               country={country}
               category={category}
-              // type={type}
               price={price}
               booking={booking}
             />
